@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #2C2129;
+}
+
+header {
+    padding: 0.5rem 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-container {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.nav-link {
+    display: inline-flex;
+    flex-direction: column;
+    height: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link .hover-text {
+    color: #C81D33;
+    transform: translateY(1.25rem);
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover .nav-link span:first-child {
+    transform: translateY(-1.25rem);
+}
+
+.nav-item:hover .nav-link .hover-text {
+    transform: translateY(-1.25rem);
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 1rem;
+}
+
+.language-selector button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.2s ease;
+    opacity: 0.7;
+    position: relative;
+}
+
+.language-selector button:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.language-selector button.active {
+    opacity: 1;
+    font-weight: 500;
+}
+
+.language-selector .separator {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 300;
+    user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+    
+    .nav-menu {
+        gap: 0.75rem;
+    }
+}
