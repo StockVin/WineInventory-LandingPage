@@ -19,3 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', scrollToSection);
     });
 });
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question-wrapper').forEach(item => {
+    item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+    });
+});
