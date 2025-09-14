@@ -132,6 +132,72 @@ nav {
     user-select: none;
 }
 
+/*ABOUT APP*/
+
+.about-app-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    gap: 50px;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #F8E8D8; 
+}
+
+.information-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text-container, .video-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container{
+    gap: 25px;
+    flex-direction: column;
+}
+.text-container p{
+    width: 80%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.video-container video{
+    border-radius: 8px;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.buttons-container img{
+    height: 40px;
+    transition: ease 0.5s;
+}
+
+.buttons-container img:hover{
+    transform: scale(0.9);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .header-container {
@@ -145,5 +211,15 @@ nav {
     
     .nav-menu {
         gap: 0.75rem;
+    }
+
+    .information-container{
+        flex-direction: column;
+    }
+    .text-container, .video-container{
+        width: 100%;
+    }
+    .buttons-container img{
+        height: 35px;
     }
 }
