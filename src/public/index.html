@@ -18,53 +18,53 @@
                         <ul class="nav-menu">
                             <li class="nav-item">
                                 <a href="#home" class="nav-link">
-                                    <span>Inicio</span>
-                                    <span class="hover-text">Inicio</span>
+                                    <span data-i18n="nav.home">Home</span>
+                                    <span class="hover-text" data-i18n="nav.home">Home</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#about" class="nav-link">
-                                    <span>Nosotros</span>
-                                    <span class="hover-text">Nosotros</span>
+                                    <span data-i18n="nav.about">About us</span>
+                                    <span class="hover-text" data-i18n="nav.about">About us</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#services" class="nav-link">
-                                    <span>Servicios</span>
-                                    <span class="hover-text">Servicios</span>
+                                    <span data-i18n="nav.services">Services</span>
+                                    <span class="hover-text" data-i18n="nav.services">Services</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#plans" class="nav-link">
-                                    <span>Planes</span>
-                                    <span class="hover-text">Planes</span>
+                                    <span data-i18n="nav.plans">Plans</span>
+                                    <span class="hover-text" data-i18n="nav.plans">Plans</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#faq" class="nav-link">
-                                    <span>FAQ</span>
-                                    <span class="hover-text">FAQ</span>
+                                    <span data-i18n="nav.faq">FAQ</span>
+                                    <span class="hover-text" data-i18n="nav.faq">FAQ</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#pricing" class="nav-link">
-                                    <span>Acerca de</span>
-                                    <span class="hover-text">Acerca de</span>
+                                    <span data-i18n="nav.aboutapps">About app</span>
+                                    <span class="hover-text" data-i18n="nav.aboutapps">About app</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#contact" class="nav-link">
-                                    <span>Contacto</span>
-                                    <span class="hover-text">Contacto</span>
+                                    <span data-i18n="nav.contact">Contact</span>
+                                    <span class="hover-text" data-i18n="nav.contact">Contact</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="language-selector">
-                    <button class="es" onclick="setLanguage('es')">ES</button>
+                    <button class="es" data-lang="es">ES</button>
                     <span class="separator">|</span>
-                    <button class="en active" onclick="setLanguage('en')">EN</button>
+                    <button class="en active" data-lang="en">EN</button>
                 </div>
             </div>
         </div>
@@ -88,6 +88,57 @@
             </div>
         </div>
     </section>
+    <!-- home section -->
+    <section id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h1 data-i18n="home.title">Optimize your inventory intelligently with Wine Inventory</h1>
+                <p data-i18n="home.description">Optimize your inventory to reduce waste and maximize product quality.</p>
+                <button data-i18n="home.button">Get started</button>
+            </div>
+            <div class="home-image">
+                <img src="assets/images/hero.png" alt="home">
+            </div>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section id="services">
+        <div class="services-header">
+            <h1 data-i18n="services.title">Services</h1>
+        </div>
+        <div class="container">
+            <div>
+                <fieldset class="service-card">
+                    <legend class="service-legend" data-i18n="services.card-owner">For liquor store owners</legend>
+                    <div class="service-content">
+                        <h2 data-i18n="services.list-1">Smart inventory management for your liquor store.</h2>
+                        <ul class="service-list">
+                            <li data-i18n="services.list-2">Monitor your inventory in real time from any device.</li>
+                            <li data-i18n="services.list-3">Automatic alerts for products that are low in stock or close to expiration.</li>
+                            <li data-i18n="services.list-4">Integrated supplier and order management.</li>
+                            <li data-i18n="services.list-5">Sales reports and analysis of best-selling products.</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset class="service-card">
+                    <legend class="service-legend" data-i18n="services.card-provider">For providers</legend>
+                    <div class="service-content">
+                        <h2 data-i18n="services.list-6">Customer and sales management tools:</h2>
+                        <ul class="service-list">
+                            <li data-i18n="services.list-7">Detailed customer records and purchase history.</li>
+                            <li data-i18n="services.list-8">Customizable loyalty and discount system.</li>
+                            <li data-i18n="services.list-9">Analysis of purchasing behavior and customer preferences.</li>
+                            <li data-i18n="services.list-10">Sending personalized promotions and offers.</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <script src="assets/scripts/i18n.js"></script>
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
