@@ -62,4 +62,51 @@ document.addEventListener('DOMContentLoaded', function() {
     if (activeButton) {
         activeButton.classList.add('active');
     }
+
+    // ==== Scroll Reveal (Reusable) ====
+    function setupScrollReveal(targetSelector, staggerSelector) {
+        const targets = document.querySelectorAll(targetSelector);
+        if (!targets.length) return;
+
+        const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (staggerSelector) {
+            const staggered = document.querySelectorAll(staggerSelector);
+            staggered.forEach((el, i) => {
+                el.style.transitionDelay = `${i * 120}ms`;
+                el.setAttribute('data-reveal-delay', '');
+            });
+        }
+
+        if (prefersReduced) {
+            targets.forEach(el => el.classList.add('is-visible'));
+            return;
+        }
+
+        targets.forEach(el => el.classList.add('reveal-on-scroll'));
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                    else entry.target.classList.remove('is-visible');
+                });
+            },
+            { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }
+        );
+
+        targets.forEach(el => observer.observe(el));
+    }
+
+    // About App
+    setupScrollReveal(
+        '#about-app, #about-app .about-app-title, #about-app .information-container, #about-app .text-container, #about-app .video-container, #about-app .buttons-container',
+        '#about-app .about-app-title, #about-app .text-container, #about-app .video-container, #about-app .buttons-container'
+    );
+
+    // Services Section (header + service cards)
+    setupScrollReveal(
+        '#services, #services .services-header h1, #services .service-card',
+        '#services .service-card'
+    );
 });
