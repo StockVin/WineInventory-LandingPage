@@ -1,7 +1,39 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const languageButtons = document.querySelectorAll('.language-selector button');
+    const contactSection = document.querySelector('#contact');
+    const contactInfo = document.querySelector('.contact-info');
     
+    function isInViewport(element) {
+        if (!element) return false;
+        
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        
+        return (
+            rect.top <= (windowHeight * 0.8) &&
+            (rect.top + rect.height) >= (windowHeight * 0.2)
+        );
+    }
+
+    function handleContactScroll() {
+        if (isInViewport(contactSection)) {
+            contactInfo.classList.add('visible');
+        } else if (window.scrollY < contactSection.offsetTop) {
+            contactInfo.classList.remove('visible');
+        }
+    }
+
+    function initScrollHandlers() {
+        handleContactScroll();
+        let isScrolling;
+        window.addEventListener('scroll', function() {
+            window.clearTimeout(isScrolling);
+            isScrolling = setTimeout(handleContactScroll, 50);
+        }, { passive: true });
+    }
+    
+    setTimeout(initScrollHandlers, 300);
     function scrollToSection(e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
@@ -19,61 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', scrollToSection);
     });
-
-
-/*FORMULARIO*/
-
- const contactForm = document.getElementById('contactForm');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); 
-
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const message = document.getElementById('message');
-
-            // Regex para validar email
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            if (name.value.trim() === '') {
-                alert('Por favor, ingresa tu nombre.');
-                name.focus();
-                return;
-            }
-
-            if (!emailRegex.test(email.value.trim())) {
-                alert('Por favor, ingresa un correo válido.');
-                email.focus();
-                return;
-            }
-
-            if (message.value.trim() === '') {
-                alert('Por favor, ingresa un mensaje.');
-                message.focus();
-                return;
-            }
-
-            
-            alert('¡Gracias por contactarnos, ' + name.value + '! Pronto te responderemos.');
-            contactForm.reset();
-        });
-    }
-
-    /* IDIOMA */
-    window.setLanguage = function(lang) {
-        const buttons = document.querySelectorAll('.language-selector button');
-        buttons.forEach(btn => btn.classList.remove('active'));
-
-        if (lang === 'es') {
-            document.querySelector('.language-selector .es').classList.add('active');
-            alert('Idioma cambiado a Español (aquí podrías traducir contenido)');
-        } else if (lang === 'en') {
-            document.querySelector('.language-selector .en').classList.add('active');
-            alert('Language switched to English (here you could translate content)');
-        }
-    };
-
     
     function handleLanguageSwitch(e) {
         e.preventDefault();
@@ -118,7 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
         activeButton.classList.add('active');
     }
 
-    // ==== Scroll Reveal (Reusable) ====
     function setupScrollReveal(targetSelector, staggerSelector) {
         const targets = document.querySelectorAll(targetSelector);
         if (!targets.length) return;
@@ -164,5 +140,4 @@ document.addEventListener('DOMContentLoaded', function() {
         '#services, #services .services-header h1, #services .service-card',
         '#services .service-card'
     );
-
 });
