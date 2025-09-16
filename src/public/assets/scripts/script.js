@@ -129,13 +129,11 @@ document.addEventListener('DOMContentLoaded', function() {
         targets.forEach(el => observer.observe(el));
     }
 
-    // About App
     setupScrollReveal(
         '#about-app, #about-app .about-app-title, #about-app .information-container, #about-app .text-container, #about-app .video-container, #about-app .buttons-container',
         '#about-app .about-app-title, #about-app .text-container, #about-app .video-container, #about-app .buttons-container'
     );
 
-    // Services Section (header + service cards)
     setupScrollReveal(
         '#services, #services .services-header h1, #services .service-card',
         '#services .service-card'
