@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const languageButtons = document.querySelectorAll('.language-selector button');
     const contactSection = document.querySelector('#contact');
     const contactInfo = document.querySelector('.contact-info');
-    
+    const faqItems = document.querySelectorAll('.faq-item');
     function isInViewport(element) {
         if (!element) return false;
         
@@ -128,16 +128,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
         targets.forEach(el => observer.observe(el));
     }
-
-    setupScrollReveal(
-        '#about-app, #about-app .about-app-title, #about-app .information-container, #about-app .text-container, #about-app .video-container, #about-app .buttons-container',
-        '#about-app .about-app-title, #about-app .text-container, #about-app .video-container, #about-app .buttons-container'
-    );
-
-    setupScrollReveal(
-        '#services, #services .services-header h1, #services .service-card',
-        '#services .service-card'
-    );
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        
+        question.addEventListener('click', () => {
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    const otherButton = otherItem.querySelector('.faq-question');
+                    const otherContent = otherItem.querySelector('.faq-answer');
+                    otherButton.setAttribute('aria-expanded', 'false');
+                    otherContent.style.maxHeight = null;
+                }
+            });
+            
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+            const content = item.querySelector('.faq-answer');
+            
+            if (isExpanded) {
+                item.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
+                content.style.maxHeight = null;
+            } else {
+                item.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+    
+    window.addEventListener('resize', () => {
+        document.querySelectorAll('.faq-item.active .faq-answer').forEach(openContent => {
+            openContent.style.maxHeight = openContent.scrollHeight + 'px';
+        });
+    });
 });
 
 // FAQ Accordion
