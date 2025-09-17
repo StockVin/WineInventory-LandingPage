@@ -139,3 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
         '#services .service-card'
     );
 });
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question-wrapper').forEach(item => {
+    item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+    });
+});
