@@ -24,30 +24,28 @@ This is the landing page for WineInventory, a platform that allows liquor store 
 
 ### Header ###
 
-
+The header includes the logo and a navigation menu that links to the main web application.
 
 ### Home ###
 
-
+The home section introduces WineInventory, highlighting its purpose. It includes a call-to-action button that redirects users to the main web app.
 
 ### About us ###
 
-
+The About us section provides information about the WineInventory team, highlighting their purpose, mission, and vision.
 
 ### Services ###
 
-
+The Services section explains WineInventory's features and details its different options for each type of user.
 
 ### Plans ###
 
-
+The plans section describes the different pricing levels available for WineInventory and details the features included in each plan.
 
 ### FAQ ###
 
-
+The FAQ section addresses common questions and concerns about WineInventory, providing clarity and support for users.
 
 ### About app ###
 
-
-
-### Contact ###
+The About app section provides a brief overview of the main features of the WineInventory web app.
