@@ -82,47 +82,46 @@
       <!-- About Section -->
     <section id="about" class="about-section section-large">
         <div class="services-header">
-            <h1 data-i18n="about.title">Nosotros</h1>
+            <h1 data-i18n="about.title">About us</h1>
         </div>
-             <div class="about-container">
-             <div class="team-grid">
-            <div class="team-member">
-                <img src="assets/images/brian-photo.jpg" alt="Bryan Hermosa" class="photo">
-                <p class="name">Bryan Hermosa</p>
+        <div class="about-container">
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="assets/images/brian-photo.jpg" alt="Bryan Hermosa" class="photo">
+                    <p class="name">Bryan Hermosa</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/Anaely-photo.jpg" alt="Anaely Burga" class="photo">
+                    <p class="name">Anaely Burga</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/matias-photos.jpg" alt="Matías Diaz" class="photo">
+                    <p class="name">Matías Diaz</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/didier-photo.jpg" alt="Didier Meza" class="photo">
+                    <p class="name">Didier Meza</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/giovani-photo.jpg" alt="Giovany Torres" class="photo">
+                    <p class="name">Giovany Torres</p>
+                </div>
             </div>
-            <div class="team-member">
-                <img src="assets/images/Anaely-photo.jpg" alt="Anaely Burga" class="photo">
-                <p class="name">Anaely Burga</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/images/matias-photos.jpg" alt="Matías Diaz" class="photo">
-                <p class="name">Matías Diaz</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/images/didier-photo.jpg" alt="Didier Meza" class="photo">
-                <p class="name">Didier Meza</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/images/giovani-photo.jpg" alt="Giovany Torres" class="photo">
-                <p class="name">Giovany Torres</p>
-            </div>
-        </div>
 
-        <div class="about-text">
-            <h3>Misión</h3>
-            <p>
-                Brindar soluciones digitales inteligentes que optimicen la trazabilidad y 
-                gestión de procesos en la industria vitivinícola, promoviendo la calidad, 
-                sostenibilidad y confianza en toda la cadena de valor del vino.
-            </p>
-            <h3>Visión</h3>
-            <p>
-                Ser la plataforma líder en transformación digital para la industria vitivinícola 
-                en América Latina, reconocida por su innovación, confiabilidad y contribución al 
-                desarrollo tecnológico del sector agroindustrial.
-            </p>
+            <div class="about-text">
+                <h3 data-i18n="about.mission">Mission</h3>
+                <p data-i18n="about.mission-text">
+                    Provide intelligent digital solutions that optimize traceability and process management in the wine industry, 
+                    promoting quality, sustainability, and trust throughout the wine value chain.
+                </p>
+                <h3 data-i18n="about.vision">Vision</h3>
+                <p data-i18n="about.vision-text">
+                    To be the leading digital transformation platform for the wine industry in Latin America, 
+                    recognized for its innovation, reliability and contribution to the technological development 
+                    of the agribusiness sector.
+                </p>
             </div>
-         </div>
+        </div>
     </section>
   
     <!-- Services Section -->
@@ -161,50 +160,132 @@
             </div>
         </div>
     </section>
+    <!-- Plans Section -->
+    <section id="plans" class="plans-section section-large">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title" data-i18n="plans.title">Choose Your Plan</h1>
+                <p class="section-subtitle" data-i18n="plans.subtitle">Select the plan that best fits your business needs</p>
+            </div>
+            
+            <div class="plans-container">
+                <!-- Plan Básico -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name" data-i18n="plans.basic.name">Free</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">S/.0</span>
+                            <span class="price-period" data-i18n="plans.basic.period">/month</span>
+                        </div>
+                        <p class="plan-description" data-i18n="plans.basic.description">Perfect for small businesses getting started</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.basic.feature1">Inventory Tracking</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.basic.feature2">Storage Guides</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.basic.feature3">Basic Alerts</span></li>
+                            <li class="disabled"><i class="fas fa-times"></i> <span data-i18n="plans.basic.feature4">Priority Support</span></li>
+                            <li class="disabled"><i class="fas fa-times"></i> <span data-i18n="plans.basic.feature5">Advanced Analytics</span></li>
+                        </ul>
+                    </div>
+                    <div class="plan-actions">
+                        <button class="btn-plan" data-i18n="plans.basic.button">Get Started</button>
+                    </div>
+                </div>
+                
+                <!-- Plan Plus -->
+                <div class="plan-card featured">
+                    <div class="popular-tag" data-i18n="plans.popular">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name" data-i18n="plans.plus.name">Plus</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">S/.19.90</span>
+                            <span class="price-period" data-i18n="plans.plus.period">/month</span>
+                        </div>
+                        <p class="plan-description" data-i18n="plans.plus.description">Ideal for growing businesses</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.plus.feature1">Everything in Free</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.plus.feature2">Priority Support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.plus.feature3">Custom Alerts</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.plus.feature4">Basic Analytics</span></li>
+                            <li class="disabled"><i class="fas fa-times"></i> <span data-i18n="plans.plus.feature5">Advanced Analytics</span></li>
+                        </ul>
+                    </div>
+                    <div class="plan-actions">
+                        <button class="btn-plan btn-featured" data-i18n="plans.plus.button">Choose</button>
+                    </div>
+                </div>
+                
+                <!-- Plan Pro -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name" data-i18n="plans.pro.name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">S/.29.90</span>
+                            <span class="price-period" data-i18n="plans.pro.period">/month</span>
+                        </div>
+                        <p class="plan-description" data-i18n="plans.pro.description">For established businesses</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.pro.feature1">Everything in Plus</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.pro.feature2">24/7 Priority Support</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.pro.feature3">Advanced Analytics</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.pro.feature4">API Access</span></li>
+                            <li><i class="fas fa-check"></i> <span data-i18n="plans.pro.feature5">Dedicated Account Manager</span></li>
+                        </ul>
+                    </div>
+                    <div class="plan-actions">
+                        <button class="btn-plan" data-i18n="plans.pro.button">Choose</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
      <!-- FAQ Section -->
     <section id="faq" class="faq-section section-large">
         <div class="services-header">
-            <h1 class="faq-title">FAQ</h1>
+            <h1 class="faq-title" data-i18n="faq.title">Frequently Asked Questions</h1>
         </div>
-    <div class="faq-container">
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <span class="faq-question" data-i18n="faq.q1">What benefits do I get by using StockVin in the management of my liquor store?</span>
+                    <span class="faq-icon">&gt;</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a1">
+                        With StockVin you can keep a complete and organized inventory control, avoiding losses due to expiration or stock shortages. Also, you will have clear and updated information about your products, allowing you to make better purchase and sales decisions.
+                    </p>
+                </div>
+            </div>
 
-        <div class="faq-item">
-            <div class="faq-question-wrapper">
-                <span class="faq-question">¿Qué beneficios obtengo al usar StockVin en la administración de mi licorería?</span>
-                <span class="faq-icon">&gt;</span>
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <span class="faq-question" data-i18n="faq.q2">How does StockVin help me maintain the quality of my beverages?</span>
+                    <span class="faq-icon">&gt;</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a2">
+                        The application allows you to register key details about the storage and care of each beverage, ensuring they are preserved in optimal conditions. This contributes to maintaining the quality and value of your merchandise at all times.
+                    </p>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>
-                 Con StockVin podrás llevar un control completo y organizado de tu inventario, evitando pérdidas por caducidad o falta de stock. Además, tendrás información clara y actualizada sobre tus productos, lo que te permitirá tomar mejores decisiones de compra y venta.
-                </p>
-            </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question-wrapper">
-                <span class="faq-question">¿Cómo me ayuda StockVin a mantener la calidad de mis bebidas?</span>
-                <span class="faq-icon">&gt;</span>
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <span class="faq-question" data-i18n="faq.q3">Does StockVin notify me when I need to restock my products?</span>
+                    <span class="faq-icon">&gt;</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-i18n="faq.a3">
+                        Yes. StockVin has automatic notifications that alert you at the right time to restock, avoiding stockouts and ensuring you always have what your customers demand in stock.
+                    </p>
+                </div>
             </div>
-            <div class="faq-answer">
-                <p>
-                 La aplicación permite registrar detalles clave sobre el almacenamiento y cuidado de cada bebida, asegurando que se conserven en condiciones óptimas. Esto contribuye a mantener la calidad y el valor de tu mercadería en todo momento.
-                </p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question-wrapper">
-                <span class="faq-question">¿StockVin me avisa cuándo debo reabastecer mis productos?</span>
-                <span class="faq-icon">&gt;</span>
-            </div>
-            <div class="faq-answer">
-                <p>
-                  Sí. StockVin cuenta con notificaciones automáticas que te alertan en el momento adecuado para reabastecerte, evitando quiebres de stock y asegurando que siempre tengas disponible lo que tus clientes demandan.
-                </p>
-            </div>
-          </div>
-
         </div>
     </section>
 
@@ -287,16 +368,16 @@
     <footer class="footer-section">
         <div class="footer-top">
             <div class="tagline">
-                <p><i class="fas fa-wine-glass-alt"></i> Calidad y eficiencia aseguradas en cada botella <i class="fas fa-wine-bottle"></i></p>
+                <p><i class="fas fa-wine-glass-alt"></i> <span data-i18n="footer.tagline">Quality and efficiency assured in every bottle</span> <i class="fas fa-wine-bottle"></i></p>
             </div>
             
             <div class="links">
-                <a href="#home"><i class="fas fa-home"></i> Home</a>
-                <a href="#about"><i class="fas fa-users"></i> About us</a>
-                <a href="#services"><i class="fas fa-concierge-bell"></i> Services</a>
-                <a href="#plans"><i class="fas fa-tags"></i> Plans</a>
-                <a href="#faq"><i class="far fa-question-circle"></i> FAQ</a>
-                <a href="#about-app"><i class="fas fa-mobile-alt"></i> About app</a>
+                <a href="#home"><i class="fas fa-home"></i> <span data-i18n="footer.home">Home</span></a>
+                <a href="#about"><i class="fas fa-users"></i> <span data-i18n="footer.about">About</span></a>
+                <a href="#services"><i class="fas fa-concierge-bell"></i> <span data-i18n="footer.services">Services</span></a>
+                <a href="#plans"><i class="fas fa-tags"></i> <span data-i18n="footer.plans">Plans</span></a>
+                <a href="#faq"><i class="far fa-question-circle"></i> <span data-i18n="footer.faq">FAQ</span></a>
+                <a href="#about-app"><i class="fas fa-mobile-alt"></i> <span data-i18n="footer.app">About the app</span></a>
             </div>
         </div>
         <div class="footer-container">
@@ -306,14 +387,13 @@
                 <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
-            <span>@Copyright, WineInventory 2025. All rights reserved</span>
-            <span><a href="privacy.html">Privacy Policy</a></span>
-            <span><a href="terms_conditions.html">Terms of Use</a></span>
+            <span data-i18n="footer.copyright">© Copyright, WineInventory 2025. All rights reserved</span>
+            <span><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></span>
+            <span><a href="terms_conditions.html" data-i18n="footer.terms">Terms of Use</a></span>
         </div>
     </footer>
     
     <script src="assets/scripts/i18n.js"></script>
-
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
