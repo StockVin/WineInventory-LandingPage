@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WineInventory - Planes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3b2c31;
+            /* Fondo oscuro de la página */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor principal de la sección de planes */
+        .plans-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .plans-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #fff;
+        }
+
+        .plans-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Estilo de las tarjetas de cada plan */
+        .plan-card {
+            background-color: #5a4b50;
+            border: 1px solid #7a6b70;
+            border-radius: 10px;
+            padding: 40px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .plan-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d19f54;
+            /* Color de acento para el precio */
+            margin-bottom: 20px;
+        }
+
+        .plan-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .plan-features li {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .plan-button {
+            background-color: transparent;
+            color: #d19f54;
+            border: 2px solid #d19f54;
+            border-radius: 25px;
+            padding: 10px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .plan-button:hover {
+            background-color: #d19f54;
+            color: #ffffff;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WineInventory</title>
+    <link rel="icon" href="assets/images/wineinventory.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo"><img src="assets/images/logo.jpg" alt="WineInventory"></a>
+            <div class="nav-wrapper">
+                <div class="nav-container">
+                    <nav>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link">
+                                    <span>Inicio</span>
+                                    <span class="hover-text">Inicio</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">
+                                    <span>Nosotros</span>
+                                    <span class="hover-text">Nosotros</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">
+                                    <span>Servicios</span>
+                                    <span class="hover-text">Servicios</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/src/public/plans.html" class="nav-link">
+                                    <span>Planes</span>
+                                    <span class="hover-text">Planes</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#faq" class="nav-link">
+                                    <span>FAQ</span>
+                                    <span class="hover-text">FAQ</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#pricing" class="nav-link">
+                                    <span>Acerca de</span>
+                                    <span class="hover-text">Acerca de</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">
+                                    <span>Contacto</span>
+                                    <span class="hover-text">Contacto</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="language-selector">
+                    <button class="es" onclick="setLanguage('es')">ES</button>
+                    <span class="separator">|</span>
+                    <button class="en active" onclick="setLanguage('en')">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="plans-section">
+        <h1 class="plans-title">Planes</h1>
+        <div class="plans-container">
+            <div class="plan-card">
+                <h2 class="plan-title">Free</h2>
+                <div class="plan-price">S/. 0.00</div>
+                <ul class="plan-features">
+                    <li>Seguimiento del inventario</li>
+                    <li>Guías de almacenamiento</li>
+                    <li>Alertas básicas</li>
+                </ul>
+                <a href="#" class="plan-button">Elegir</a>
+            </div>
+
+            <div class="plan-card">
+                <h2 class="plan-title">Plus</h2>
+                <div class="plan-price">S/. 19.90</div>
+                <ul class="plan-features">
+                    <li>Soporte prioritario</li>
+                    <li>Alertas personalizadas</li>
+                </ul>
+                <a href="#" class="plan-button">Elegir</a>
+            </div>
+
+            <div class="plan-card">
+                <h2 class="plan-title">Pro</h2>
+                <div class="plan-price">S/. 29.90</div>
+                <ul class="plan-features">
+                    <li>Seguimiento ilimitado, con integración a sistemas de distribución y rastreo en tiempo real.</li>
+                    <li>Prioritario 24/7 con atención personalizada.</li>
+                </ul>
+                <a href="#" class="plan-button">Elegir</a>
+            </div>
+        </div>
+    </section>
+    <script src="assets/scripts/script.js"></script>
+
+</body>
+
+</html>

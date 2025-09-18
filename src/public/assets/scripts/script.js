@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
     
 
     function scrollToSection(e) {
