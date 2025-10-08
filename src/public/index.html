@@ -70,7 +70,7 @@
             <div class="home-content">
                 <h1 data-i18n="home.title">Optimize your inventory intelligently with Wine Inventory</h1>
                 <p data-i18n="home.description">Optimize your inventory to reduce waste and maximize product quality.</p>
-                <button data-i18n="home.button">Get started</button>
+                <button data-i18n="home.button" onclick="window.location.href='https://wineinventory-front-end.web.app/sign-in'">Get started</button>
             </div>
             <div class="home-image">
                 <img src="assets/images/hero.png" alt="home">
@@ -87,15 +87,11 @@
         <div class="about-container">
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="assets/images/brian-photo.jpg" alt="Bryan Hermosa" class="photo">
-                    <p class="name">Bryan Hermosa</p>
-                </div>
-                <div class="team-member">
                     <img src="assets/images/Anaely-photo.jpg" alt="Anaely Burga" class="photo">
                     <p class="name">Anaely Burga</p>
                 </div>
                 <div class="team-member">
-                    <img src="assets/images/matias-photos.jpg" alt="Matías Diaz" class="photo">
+                    <img src="assets/images/matias-photo-v2.jpg" alt="Matías Diaz" class="photo">
                     <p class="name">Matías Diaz</p>
                 </div>
                 <div class="team-member">
@@ -298,18 +294,20 @@
                     <h1 data-i18n="about-app.title-1">Smart Wine and Pisco Management</h1>
                 </div>
             </div>
-
             <div class="about-content">
                 <div class="app-preview">
                     <div class="phone-mockup">
                         <div class="video-screen">
-                            <video src="WineInventory.mp4" autoplay loop muted playsinline></video>
-                            <div class="play-button">
-                                <div class="play-icon"></div>
-                            </div>
+                            <iframe
+                                src="https://www.youtube.com/embed/_4Wz4wJS_LI?autoplay=0&controls=1&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=_4Wz4wJS_LI"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="encrypted-media; picture-in-picture"
+                                allowfullscreen
+                                style="width: 100%; height: 100%; border: 0;">
+                            </iframe>
                         </div>
                     </div>
-                    <div class="download-section">
                         <p class="download-text" data-i18n="about-app.download">Download now</p>
                         <div class="download-buttons">
                             <a href="#" class="download-btn">
