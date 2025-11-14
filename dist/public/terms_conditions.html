@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      data-i18n-html="terms.meta_description"
+      content="Terms &amp; Conditions - WineInventory"
+    />
+    <title data-i18n-html="terms.title">
+      Terms &amp; Conditions - WineInventory
+    </title>
+    <link
+      rel="icon"
+      href="assets/images/wineinventory.ico"
+      type="image/x-icon"
+    />
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+      
+      :root {
+        --font-heading: 'PT Serif', serif;
+        --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        --font-buttons: 'Roboto', sans-serif;
+      }
+      
+      .terms-conditions-page {
+        --primary-color: #c81d33;
+        --primary-dark: #8b1a32;
+        --bg-dark: #2c2129;
+        --bg-darker: #1e1720;
+        --text-color: #f0e6ef;
+        --text-secondary: #b8a9b8;
+        --card-bg: rgba(44, 33, 41, 0.8);
+        --card-border: rgba(200, 29, 51, 0.2);
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        min-height: 100%;
+        display: block;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: var(--font-body);
+      }
+
+      .terms-conditions-page,
+      .terms-conditions-page * {
+        box-sizing: border-box;
+      }
+
+      .terms-conditions-page {
+        background-color: var(--bg-darker);
+        color: var(--text-color);
+        line-height: 1.7;
+        overflow-x: hidden;
+        margin: 0;
+      }
+      .terms-conditions-page html,
+      .terms-conditions-page body {
+        height: 100%;
+      }
+
+      .terms-conditions-page .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        background: linear-gradient(
+          135deg,
+          rgba(44, 33, 41, 0.95) 0%,
+          rgba(58, 45, 55, 0.92) 100%
+        );
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(200, 29, 51, 0.1);
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .terms-conditions-page .header-content {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .terms-conditions-page .header-actions {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .terms-conditions-page .privacy-container {
+        max-width: 1100px;
+        margin: 100px auto 50px;
+        padding: 0 2rem;
+        color: var(--text-color);
+        position: relative;
+        z-index: 1;
+        padding-top: 80px;
+      }
+
+      .terms-conditions-page::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            135deg,
+            #1a0f1a 0%,
+            #2a1620 50%,
+            #1e0f1e 100%
+          ),
+          radial-gradient(
+            circle at 10% 20%,
+            rgba(200, 29, 51, 0.15) 0%,
+            transparent 25%
+          ),
+          radial-gradient(
+            circle at 90% 80%,
+            rgba(123, 31, 162, 0.2) 0%,
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at 30% 60%,
+            rgba(74, 20, 140, 0.18) 0%,
+            transparent 35%
+          ),
+          radial-gradient(
+            circle at 70% 40%,
+            rgba(200, 29, 51, 0.12) 0%,
+            transparent 30%
+          );
+        z-index: -2;
+        pointer-events: none;
+        animation: terms-gradientShift 20s ease infinite;
+      }
+
+      .terms-conditions-page .privacy-container::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            135deg,
+            rgba(26, 15, 26, 0.9) 0%,
+            rgba(42, 22, 32, 0.9) 100%
+          ),
+          url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c81d33' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        z-index: -1;
+        pointer-events: none;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+      }
+
+      @keyframes terms-gradientShift {
+        0%,
+        100% {
+          background-position: 0% 0%, 10% 20%, 90% 80%, 30% 60%, 70% 40%;
+        }
+        25% {
+          background-position: 0% 0%, 15% 25%, 85% 75%, 35% 65%, 75% 45%;
+        }
+        50% {
+          background-position: 0% 0%, 10% 25%, 90% 75%, 30% 55%, 70% 35%;
+        }
+        75% {
+          background-position: 0% 0%, 15% 20%, 85% 80%, 35% 55%, 75% 35%;
+        }
+      }
+
+      .terms-conditions-page .privacy-header {
+        text-align: center;
+        margin: 0 auto 6rem;
+        position: relative;
+        padding: 4rem 3rem;
+        background: linear-gradient(
+          135deg,
+          rgba(200, 29, 51, 0.12) 0%,
+          rgba(139, 26, 50, 0.08) 100%
+        );
+        border-radius: 24px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(200, 29, 51, 0.15);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+        max-width: 850px;
+        transform: translateY(0);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+      }
+
+      .terms-conditions-page .privacy-header:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+        border-color: rgba(200, 29, 51, 0.25);
+      }
+
+      .terms-conditions-page .privacy-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(
+          90deg,
+          var(--primary-color) 0%,
+          var(--primary-dark) 50%,
+          var(--primary-color) 100%
+        );
+        background-size: 200% 100%;
+        animation: terms-gradient 3s ease infinite;
+      }
+
+      @keyframes terms-gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .back-to-home::before {
+        content: "←";
+        font-size: 1.1em;
+        transition: transform 0.3s ease;
+      }
+
+      .back-to-home:hover {
+        color: #fff;
+        background: rgba(200, 29, 51, 0.25);
+        border-color: rgba(200, 29, 51, 0.4);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 15px rgba(200, 29, 51, 0.2);
+      }
+
+      .back-to-home:hover::before {
+        transform: translateX(-3px);
+      }
+
+      .language-selector {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 30px;
+        padding: 0.25rem;
+        border: 1px solid rgba(200, 29, 51, 0.15);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .language-selector button {
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.25s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        font-family: var(--font-buttons);
+      }
+
+      .language-selector button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(200, 29, 51, 0.2),
+          rgba(139, 26, 50, 0.2)
+        );
+        border-radius: 20px;
+        opacity: 0;
+        transform: scale(0.8);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: -1;
+      }
+
+      .language-selector button:hover {
+        color: #fff;
+      }
+
+      .language-selector button:hover::before {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .language-selector button.active {
+        color: #fff;
+        background: linear-gradient(
+          135deg,
+          var(--primary-color),
+          var(--primary-dark)
+        );
+        box-shadow: 0 2px 8px rgba(200, 29, 51, 0.3);
+      }
+
+      .language-selector .separator {
+        color: rgba(200, 29, 51, 0.3);
+        font-weight: 300;
+        user-select: none;
+      }
+
+      .terms-conditions-page .privacy-header h1 {
+        font-size: 3.2rem;
+        margin: 0 0 1.2rem;
+        color: #fff;
+        font-weight: 800;
+        line-height: 1.15;
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        letter-spacing: -0.5px;
+        transition: all 0.3s ease;
+        font-family: var(--font-heading);
+      }
+
+      .terms-conditions-page .privacy-header:hover h1 {
+        transform: translateY(-2px);
+        text-shadow: 0 6px 25px rgba(200, 29, 51, 0.3);
+      }
+
+      .terms-conditions-page .privacy-header .lead {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        opacity: 0.9;
+      }
+
+      .terms-conditions-page .privacy-header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: var(--primary-color);
+        border-radius: 3px;
+      }
+
+      .terms-conditions-page section {
+        background: linear-gradient(
+          145deg,
+          rgba(44, 33, 41, 0.85) 0%,
+          rgba(58, 45, 55, 0.75) 100%
+        );
+        border-radius: 16px;
+        padding: 2.5rem;
+        margin: 0 auto 2.5rem;
+        border: 1px solid rgba(200, 29, 51, 0.15);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        position: relative;
+        overflow: hidden;
+        transform: translateY(0) scale(0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        opacity: 0;
+        animation: terms-fadeInUp 0.6s ease-out forwards;
+        max-width: 100%;
+        will-change: transform, box-shadow;
+        border-left: 4px solid rgba(200, 29, 51, 0.3);
+      }
+
+      .terms-conditions-page section:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 25px 60px rgba(200, 29, 51, 0.3);
+        border-color: rgba(200, 29, 51, 0.4);
+        background: linear-gradient(
+          145deg,
+          rgba(50, 35, 47, 0.9) 0%,
+          rgba(65, 45, 60, 0.7) 100%
+        );
+        z-index: 2;
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+          box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0.4s ease;
+        backface-visibility: hidden;
+      }
+
+      .terms-conditions-page section > * {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+      }
+
+      .terms-conditions-page section:hover > * {
+        transform: scale(1.01);
+      }
+
+      @keyframes terms-fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .terms-conditions-page section:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .terms-conditions-page section:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .terms-conditions-page section:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .terms-conditions-page section:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      .terms-conditions-page section:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+      .terms-conditions-page section:nth-child(n + 7) {
+        animation-delay: 0.6s;
+      }
+
+      .terms-conditions-page section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          var(--primary-color),
+          var(--primary-dark)
+        );
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0.8;
+        z-index: 0;
+      }
+
+      .terms-conditions-page section:hover::before {
+        width: 6px;
+        opacity: 1;
+        box-shadow: 0 0 15px rgba(200, 29, 51, 0.5);
+      }
+
+      .terms-conditions-page h2 {
+        color: #fff;
+        font-size: 2.1rem;
+        margin: 0 0 1.8rem 0;
+        padding: 0 0 1rem 0;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        display: inline-block;
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        background: linear-gradient(90deg, #fff 0%, #e0e0e0 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: var(--font-heading);
+      }
+
+      .terms-conditions-page h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 70px;
+        background: linear-gradient(
+          90deg,
+          var(--primary-color),
+          var(--primary-dark)
+        );
+        border-radius: 3px;
+        transition: width 0.3s ease;
+        box-shadow: 0 0 10px rgba(200, 29, 51, 0.3);
+      }
+
+      .terms-conditions-page h2:hover::after {
+        width: 100px;
+      }
+
+      .terms-conditions-page p {
+        margin-bottom: 1.8rem;
+        color: #f0e6ef;
+        line-height: 1.9;
+        font-size: 1.1rem;
+        position: relative;
+        padding-left: 1.8rem;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      .terms-conditions-page section:hover p {
+        color: #f8f5f8;
+      }
+
+      .terms-conditions-page p::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        line-height: 1;
+        top: 0.1em;
+        opacity: 0.7;
+      }
+
+      .terms-conditions-page ul,
+      .terms-conditions-page ol {
+        padding-left: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .terms-conditions-page li {
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 2rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        transition: transform 0.2s ease;
+      }
+      .terms-conditions-page li:hover {
+        transform: translateX(5px);
+      }
+      .terms-conditions-page li::before {
+        content: "→";
+        color: var(--primary-color);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+      .terms-conditions-page li:hover::before {
+        transform: translateX(3px);
+      }
+
+      .terms-conditions-page ul li {
+        position: relative;
+        padding: 0.8rem 1.5rem 0.8rem 3rem;
+        margin-bottom: 0.8rem;
+        color: #e6e0e5;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 8px;
+        background: rgba(30, 20, 30, 0.3);
+        border-left: 3px solid transparent;
+      }
+      .terms-conditions-page ul li:hover {
+        background: rgba(200, 29, 51, 0.1);
+        transform: translateX(5px);
+        border-left: 3px solid var(--primary-color);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .terms-conditions-page ul li::before {
+        content: "→";
+        color: var(--primary-color);
+        position: absolute;
+        left: 1rem;
+        font-weight: bold;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0.8;
+        font-size: 1.2em;
+        line-height: 1.5;
+        text-shadow: 0 0 8px rgba(200, 29, 51, 0.5);
+      }
+      .terms-conditions-page ul li:hover::before {
+        transform: translateX(5px) scale(1.2);
+        opacity: 1;
+        color: #ff6b6b;
+        text-shadow: 0 0 12px rgba(255, 107, 107, 0.7);
+      }
+
+      .terms-conditions-page .back-to-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: #fff;
+        background: linear-gradient(
+          135deg,
+          rgba(200, 29, 51, 0.25) 0%,
+          rgba(139, 26, 50, 0.2) 100%
+        );
+        padding: 0.7rem 1.4rem;
+        border-radius: 50px;
+        text-decoration: none !important;
+        font-weight: 600;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        border: 1px solid rgba(200, 29, 51, 0.35);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        box-shadow: 0 6px 20px rgba(200, 29, 51, 0.15);
+        letter-spacing: 0.3px;
+        position: relative;
+        transform: scale(1);
+        font-family: var(--font-buttons);
+      }
+      .terms-conditions-page .back-to-home i {
+        transition: transform 0.2s ease-in-out;
+      }
+      .terms-conditions-page .back-to-home:hover {
+        text-decoration: none !important;
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(200, 29, 51, 0.25);
+      }
+      .terms-conditions-page .back-to-home:hover i {
+        transform: translateX(3px);
+      }
+      .terms-conditions-page .back-to-home:after {
+        display: none !important;
+      }
+
+      .terms-conditions-page a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: var(--transition);
+        position: relative;
+        font-weight: 600;
+        background: linear-gradient(
+          135deg,
+          rgba(200, 29, 51, 0.15) 0%,
+          rgba(139, 26, 50, 0.1) 100%
+        );
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        line-height: 1.5;
+        border: 1px solid rgba(200, 29, 51, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        font-family: var(--font-buttons);
+      }
+      .terms-conditions-page a i {
+        font-size: 0.9em;
+        transition: transform 0.3s ease;
+      }
+      .terms-conditions-page a:hover i {
+        transform: translateX(2px);
+      }
+      .terms-conditions-page a:hover {
+        color: #fff;
+        background: linear-gradient(
+          135deg,
+          rgba(200, 29, 51, 0.3) 0%,
+          rgba(200, 29, 51, 0.2) 100%
+        );
+        text-shadow: 0 0 10px rgba(200, 29, 51, 0.5);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(200, 29, 51, 0.15);
+      }
+      .terms-conditions-page a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: var(--primary-color);
+        transition: width 0.3s ease;
+      }
+      .terms-conditions-page a:hover::after {
+        width: 100%;
+      }
+
+      .terms-conditions-page .small {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .terms-conditions-page .contact-info {
+        background: linear-gradient(
+          135deg,
+          rgba(44, 33, 41, 0.6) 0%,
+          rgba(58, 45, 55, 0.5) 100%
+        );
+        padding: 2rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+      }
+      .terms-conditions-page .contact-info p {
+        margin-bottom: 1.2rem;
+        position: relative;
+        padding-left: 2.5rem;
+        font-size: 1.1rem;
+      }
+      .terms-conditions-page .contact-info i {
+        color: var(--primary-color);
+        position: absolute;
+        left: 0;
+        top: 0.2em;
+        font-size: 1.2em;
+      }
+
+      .terms-conditions-page .floating-orb {
+        position: absolute;
+        border-radius: 50%;
+        z-index: 0;
+        pointer-events: none;
+      }
+      .terms-conditions-page .floating-orb.orb-large {
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(
+          circle,
+          rgba(200, 29, 51, 0.15) 0%,
+          transparent 70%
+        );
+        top: -100px;
+        right: -100px;
+      }
+      .terms-conditions-page .floating-orb.orb-medium {
+        width: 150px;
+        height: 150px;
+        background: radial-gradient(
+          circle,
+          rgba(139, 26, 50, 0.1) 0%,
+          transparent 70%
+        );
+        bottom: -50px;
+        left: -50px;
+      }
+
+      .terms-conditions-page #back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: rgba(200, 29, 51, 0.1);
+        padding: 0.8rem 1.2rem;
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(200, 29, 51, 0.2);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-color);
+        font-size: 0.9rem;
+        text-decoration: none;
+        font-family: var(--font-buttons);
+      }
+      .terms-conditions-page #back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      .terms-conditions-page #back-to-top:hover {
+        background: rgba(200, 29, 51, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* Aplicar PT Serif a los títulos */
+      .terms-conditions-page h1,
+      .terms-conditions-page h2,
+      .terms-conditions-page h3,
+      .terms-conditions-page h4,
+      .terms-conditions-page h5,
+      .terms-conditions-page h6 {
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-family: 'PT Serif', serif;
+      }
+
+      .terms-conditions-page a:focus,
+      .terms-conditions-page button:focus,
+      .terms-conditions-page .back-to-home:focus,
+      .terms-conditions-page #back-to-top:focus {
+        outline: 3px solid rgba(200, 29, 51, 0.25);
+        outline-offset: 2px;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 992px) {
+        .terms-conditions-page .privacy-header {
+          padding: 3rem 2rem;
+          margin-bottom: 4rem;
+        }
+        .terms-conditions-page .privacy-header h1 {
+          font-size: 2.5rem;
+        }
+        .terms-conditions-page h2 {
+          font-size: 1.8rem;
+          margin: 2rem 0 1.8rem;
+        }
+        .terms-conditions-page section {
+          padding: 2rem 1.5rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .terms-conditions-page .privacy-container {
+          padding: 0 1.5rem;
+          margin: 80px auto 40px;
+        }
+        .terms-conditions-page .fixed-header {
+          padding: 0.8rem 1rem;
+        }
+        .terms-conditions-page .back-to-home {
+          padding: 0.6rem 1.2rem;
+          font-size: 0.95rem;
+        }
+        .terms-conditions-page .privacy-header {
+          padding: 2.5rem 1.5rem;
+          margin-bottom: 3.5rem;
+          border-radius: 18px;
+        }
+        .terms-conditions-page .privacy-header h1 {
+          font-size: 2.2rem;
+          margin-bottom: 1rem;
+        }
+        .terms-conditions-page h2 {
+          font-size: 1.6rem;
+          margin: 1.8rem 0 1.5rem;
+          padding-bottom: 0.8rem;
+        }
+        .terms-conditions-page p {
+          font-size: 1.05rem;
+          line-height: 1.8;
+          padding-left: 1.2rem;
+        }
+        .terms-conditions-page ul {
+          margin-left: 1.2rem;
+        }
+        .terms-conditions-page ul li {
+          padding: 0.5rem 0 0.5rem 1.8rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .terms-conditions-page .privacy-container {
+          padding: 0 1rem;
+          margin: 80px auto 30px;
+        }
+        .terms-conditions-page .privacy-header {
+          padding: 1.5rem 1rem;
+          margin-bottom: 2.5rem;
+        }
+        .terms-conditions-page .privacy-header h1 {
+          font-size: 2rem;
+          padding: 0 0.5rem;
+        }
+        .terms-conditions-page .privacy-header .lead {
+          font-size: 1rem;
+        }
+        .terms-conditions-page section {
+          padding: 1.5rem 1.25rem;
+          margin-bottom: 1.75rem;
+          border-radius: 12px;
+        }
+        .terms-conditions-page h2 {
+          font-size: 1.4rem;
+          margin-bottom: 1.25rem;
+          padding-bottom: 0.75rem;
+        }
+        .terms-conditions-page p {
+          font-size: 0.95rem;
+          line-height: 1.7;
+          padding-left: 1.2rem;
+        }
+        .terms-conditions-page p::before {
+          font-size: 1.3rem;
+          top: 0.15em;
+        }
+        .terms-conditions-page li {
+          font-size: 0.95rem;
+          padding-left: 1.6rem;
+          margin-bottom: 0.8rem;
+        }
+        .terms-conditions-page .contact-info {
+          padding: 1.25rem !important;
+        }
+        .terms-conditions-page .contact-info p {
+          font-size: 0.95rem !important;
+          padding-left: 1.8rem !important;
+        }
+        .terms-conditions-page .contact-info i {
+          margin-right: 8px !important;
+        }
+      }
+      .terms-conditions-page .hidden {
+        display: none !important;
+      }
+      .terms-conditions-page .center {
+        text-align: center;
+      }
+      .terms-conditions-page .max-w-1100 {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .terms-conditions-page * {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.001ms !important;
+          scroll-behavior: auto !important;
+        }
+        .terms-conditions-page::before {
+          animation: none !important;
+        }
+        .terms-conditions-page .privacy-header,
+        .terms-conditions-page section {
+          transition: none !important;
+          transform: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="terms-conditions-page">
+    <a class="skip-link hidden" href="#main-content">Skip to content</a>
+    <header class="fixed-header" role="banner">
+      <div class="header-content">
+        <a
+          href="index.html"
+          class="back-to-home"
+          data-i18n-html="terms.back"
+          aria-label="Back to home"
+        >
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
+          <span data-i18n-html="terms.back">Back to home</span>
+        </a>
+        <div
+          class="language-selector"
+          role="navigation"
+          aria-label="Language selector"
+        >
+          <button class="es" data-lang="es" aria-pressed="false">ES</button>
+          <span class="separator" aria-hidden="true">|</span>
+          <button class="en active" data-lang="en" aria-pressed="true">
+            EN
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content" class="privacy-container" role="main" tabindex="-1">
+      <header class="privacy-header">
+        <h1 data-i18n-html="terms.header_title">Terms &amp; Conditions</h1>
+        <p class="lead" data-i18n-html="terms.header_subtitle">
+          Last updated: September 15, 2025
+        </p>
+      </header>
+      <section aria-labelledby="intro">
+        <h2 id="intro" data-i18n-html="terms.intro.title">1. Introduction</h2>
+        <p data-i18n-html="terms.intro.text">
+          Welcome to <strong>WineInventory</strong> (the "Platform", "we" or the
+          "Service"). These Terms and Conditions ("Terms") govern your access to
+          and use of our wine inventory management platform, including related
+          web features. By accessing or using the Platform you accept these
+          Terms in full.
+        </p>
+      </section>
+      <section aria-labelledby="service">
+        <h2 id="service" data-i18n-html="terms.service.title">
+          2. Description of the Service
+        </h2>
+        <p data-i18n-html="terms.service.text">
+          WineInventory provides a comprehensive solution for wine inventory
+          management, allowing stock control, batch tracking, cellar management
+          and report generation. The Platform includes free basic features and
+          paid advanced features, with customization options according to your
+          business needs.
+        </p>
+      </section>
+      <section aria-labelledby="eligibility">
+        <h2 id="eligibility" data-i18n-html="terms.eligibility.title">
+          3. Eligibility
+        </h2>
+        <p data-i18n-html="terms.eligibility.text">
+          The Platform may only be used by individuals and businesses legally
+          capable of entering into contracts in your jurisdiction. Access by
+          minors is not permitted where prohibited by applicable law. By
+          registering you represent that you have the legal capacity to accept
+          these Terms.
+        </p>
+      </section>
+      <section aria-labelledby="account">
+        <h2 id="account" data-i18n-html="terms.account.title">
+          4. User Account
+        </h2>
+        <ol>
+          <li data-i18n-html="terms.account.list1">
+            <strong>Registration:</strong> To use certain features you must
+            create an account and provide accurate and up-to-date information.
+          </li>
+          <li data-i18n-html="terms.account.list2">
+            <strong>Credentials:</strong> You are responsible for maintaining
+            the security of your username and password. Notify us immediately if
+            you suspect unauthorized access.
+          </li>
+          <li data-i18n-html="terms.account.list3">
+            <strong>Suspension/Termination:</strong> We may suspend or close
+            accounts for violations of these Terms or for security or legal
+            reasons.
+          </li>
+        </ol>
+      </section>
+      <section aria-labelledby="payments">
+        <h2 id="payments" data-i18n-html="terms.payments.title">
+          5. Payments and Billing
+        </h2>
+        <p data-i18n-html="terms.payments.text">
+          Paid services are subject to fees published on the Platform. By
+          subscribing to a plan you authorize applicable charges. We use
+          third-party payment processors and do not store full card numbers on
+          our servers unless explicitly stated with appropriate safeguards.
+        </p>
+      </section>
+      <section aria-labelledby="user-responsibilities">
+        <h2
+          id="user-responsibilities"
+          data-i18n-html="terms.user_responsibilities.title"
+        >
+          6. User Responsibilities
+        </h2>
+        <ul>
+          <li data-i18n-html="terms.user_responsibilities.li1">
+            Use the Platform in compliance with applicable laws and these Terms.
+          </li>
+          <li data-i18n-html="terms.user_responsibilities.li2">
+            Do not enter illegal, defamatory, unsafe or third-party infringing
+            data.
+          </li>
+          <li data-i18n-html="terms.user_responsibilities.li3">
+            Keep backups of your critical information (we strive to protect data
+            but are not responsible for losses due to user negligence).
+          </li>
+        </ul>
+      </section>
+      <section aria-labelledby="prohibited">
+        <h2 id="prohibited" data-i18n-html="terms.prohibited.title">
+          7. Prohibited Uses
+        </h2>
+        <p data-i18n-html="terms.prohibited.text">
+          Among other things, you must not:
+        </p>
+        <ul>
+          <li data-i18n-html="terms.prohibited.li1">
+            Use the Platform for illegal, fraudulent activities or to infringe
+            third-party rights.
+          </li>
+          <li data-i18n-html="terms.prohibited.li2">
+            Attempt to gain unauthorized access to systems or other users' data.
+          </li>
+          <li data-i18n-html="terms.prohibited.li3">
+            Interfere with the operation of the service (e.g., DDoS attacks,
+            unauthorized scraping).
+          </li>
+        </ul>
+      </section>
+      <section aria-labelledby="intellectual">
+        <h2 id="intellectual" data-i18n-html="terms.intellectual.title">
+          8. Intellectual Property
+        </h2>
+        <p data-i18n-html="terms.intellectual.text">
+          All content, trademarks, designs, code and materials on the Platform
+          are owned by WineInventory or its licensors and protected by copyright
+          and other laws. You retain ownership of the data you upload, but grant
+          us a limited, non-exclusive, revocable license to operate, store and
+          display that data for the provision of the service.
+        </p>
+      </section>
+      <section aria-labelledby="third-party">
+        <h2 id="third-party" data-i18n-html="terms.third_party.title">
+          9. Third-Party Services and Content
+        </h2>
+        <p data-i18n-html="terms.third_party.text">
+          The Platform may integrate third-party services (payment gateways,
+          email providers, messaging APIs, analytics). Use of such services is
+          subject to their own terms and policies. We are not responsible for
+          conduct or security of external providers.
+        </p>
+      </section>
+      <section aria-labelledby="warranties-liability">
+        <h2 id="warranties-liability" data-i18n-html="terms.warranties.title">
+          10. Warranties &amp; Limitation of Liability
+        </h2>
+        <p data-i18n-html="terms.warranties.text1">
+          The Platform is provided "as is" and "as available". To the maximum
+          extent permitted by law, WineInventory makes no express warranties
+          regarding fitness, continuous availability, error-free operation or
+          accuracy of information. Our total liability for direct damages
+          arising from use of the Platform is limited to the amount actually
+          paid by the user in the 6 months preceding the claim (or €100 if no
+          payments have been made), unless applicable law requires otherwise.
+        </p>
+        <p data-i18n-html="terms.warranties.text2">
+          We shall not be liable for indirect damages, lost profits, data loss
+          or consequential damages except as required by law.
+        </p>
+      </section>
+      <section aria-labelledby="indemnity">
+        <h2 id="indemnity" data-i18n-html="terms.indemnity.title">
+          11. Indemnity
+        </h2>
+        <p data-i18n-html="terms.indemnity.text">
+          You agree to indemnify and hold harmless WineInventory, its employees
+          and affiliates from claims, damages, liabilities and expenses arising
+          from your use of the Platform, your breach of these Terms or violation
+          of third-party rights.
+        </p>
+      </section>
+      <section aria-labelledby="termination">
+        <h2 id="termination" data-i18n-html="terms.termination.title">
+          12. Suspension &amp; Termination
+        </h2>
+        <p data-i18n-html="terms.termination.text">
+          We may suspend or terminate access to the Platform for breaches of
+          these Terms, security reasons, platform changes or legal requests.
+          Upon termination, we may delete account data after the retention
+          periods set in our Privacy Policy.
+        </p>
+      </section>
+      <section aria-labelledby="updates">
+        <h2 id="updates" data-i18n-html="terms.updates.title">
+          13. Changes to These Terms
+        </h2>
+        <p data-i18n-html="terms.updates.text">
+          We may update these Terms from time to time. We will post the updated
+          version with the modification date. If changes are material, we will
+          notify you via the Platform or email. Continued use after posting
+          constitutes acceptance of the changes.
+        </p>
+      </section>
+      <section aria-labelledby="governing-law">
+        <h2 id="governing-law" data-i18n-html="terms.governing_law.title">
+          14. Governing Law &amp; Jurisdiction
+        </h2>
+        <p data-i18n-html="terms.governing_law.text">
+          These Terms are governed by the laws of the country where
+          WineInventory is headquartered (replace with your jurisdiction).
+          Disputes will be submitted to the competent courts of that
+          jurisdiction unless applicable law requires otherwise or arbitration
+          is agreed.
+        </p>
+      </section>
+      <section aria-labelledby="misc">
+        <h2 id="misc" data-i18n-html="terms.misc.title">15. Miscellaneous</h2>
+        <ul>
+          <li data-i18n-html="terms.misc.sep">
+            <strong>Severability:</strong> If any provision is held invalid, the
+            remaining provisions will remain in force.
+          </li>
+          <li data-i18n-html="terms.misc.waiver">
+            <strong>No waiver:</strong> Failure to exercise a right does not
+            constitute a waiver of that right.
+          </li>
+          <li data-i18n-html="terms.misc.complete">
+            <strong>Entire agreement:</strong> These Terms, together with the
+            Privacy Policy and other applicable policies, constitute the entire
+            agreement between the parties regarding the service.
+          </li>
+        </ul>
+      </section>
+      <section aria-labelledby="contact">
+        <h2 id="contact" data-i18n-html="terms.contact.title">16. Contact</h2>
+        <p data-i18n-html="terms.contact.text">
+          If you have questions about these Terms or wish to contact us:
+        </p>
+        <p class="small" data-i18n-html="terms.contact.info">
+          WineInventory<br />
+          Email:
+          <a href="mailto:legal@wineinventory.com">legal@wineinventory.com</a>
+        </p>
+      </section>
+    </main>
+    <script src="assets/scripts/i18n.js"></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (!targetId || targetId === "#") return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top:
+                targetElement.getBoundingClientRect().top +
+                window.pageYOffset -
+                100,
+              behavior: "smooth",
+            });
+            if (history.pushState) {
+              history.pushState(null, null, targetId);
+            } else {
+              window.location.hash = targetId;
+            }
+          }
+        });
+      });
+      const animateOnScroll = () => {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const windowHeight =
+            window.innerHeight || document.documentElement.clientHeight;
+          if (rect.top < windowHeight - 100) {
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+          }
+        });
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section, index) => {
+          section.style.opacity = "0";
+          section.style.transform = "translateY(20px)";
+          section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          section.style.transitionDelay = `${index * 0.08}s`;
+        });
+        animateOnScroll();
+        window.addEventListener("scroll", animateOnScroll);
+      });
+    </script>
+  </body>
+</html>
